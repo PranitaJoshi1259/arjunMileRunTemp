@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+    <link rel="icon" type="image/x-icon" href="/html/assets/icons/Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="/html/css/style.min.css" rel="stylesheet">
+    <link href="/html/css/form.css" rel="stylesheet">
+    <!-- <link href="/html/css/style.css" rel="stylesheet"> -->
+</head>
+<body>
+    <nav class="form-header">
+        <a href="index.html"><img src="/html/assets/logo/brand-logo.svg" alt="brand-logo"></a>
+    </nav>
+    <section class="registration-container">
+        <div class="form-outer-border">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="form-container">
+                <h1 class="mb-0">Team Captain/Team Member</h1>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="team" class="mb-2">First Name</label><br>
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="team" class="mb-2">Last Name</label><br>
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <label for="team" class="mb-3">Gender</label><br>
+                    <div class="row form-mb">
+                        <div class="col-6 col-sm-4 col-md-2 d-flex align-items-center mb-3 gap-2">
+                            <div>
+                                <input type="radio" name="radio" value="Male" class="radio-btn-size mb-0" id="Male">
+                            </div>
+                            <label for="Male" class="radio-text w-100">Male</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 d-flex align-items-center mb-3 gap-2">
+                            <div>
+                                <input type="radio" name="radio" value="Female" class="radio-btn-size mb-0" id="Female">
+                            </div>
+                            <label for="Female" class="radio-text w-100">Female</label>
+                        </div>
+                    </div>
+                    <label for="team" class="mb-2">Contact Number (Whatsapp Preferred)</label><br>
+                    <input type="tel" name="team">
+                    <label for="team" class="mb-3">T-Shirt Size </label><br>
+                    <div class="row form-mb">
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="X-Small" class="radio-btn-size mb-0" id="X-Small">
+                            </div>
+                            <label for="X-Small" class="radio-text w-100">X-Small</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="Small" class="radio-btn-size mb-0" id="Small">
+                            </div>
+                            <label for="Small" class="radio-text w-100">Small</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="Medium" class="radio-btn-size mb-0" id="Medium">
+                            </div>
+                            <label for="Medium" class="radio-text w-100">Medium</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="Large" class="radio-btn-size mb-0" id="Large">
+                            </div>
+                            <label for="Large" class="radio-text w-100">Large</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="X-Small" class="radio-btn-size mb-0" id="X-Large">
+                            </div>
+                            <label for="X-Large" class="radio-text w-100">X-Large</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="Small" class="radio-btn-size mb-0" id="XX-Large">
+                            </div>
+                            <label for="XX-Large" class="radio-text w-100">XX-Large</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="Small" class="radio-btn-size mb-0" id="XXX-Large">
+                            </div>
+                            <label for="XXX-Large" class="radio-text w-100">XXX-Large</label>
+                        </div>
+                    </div>
+
+                    <label for="team" class="mb-3">Blood Group </label><br>
+                    <div class="row form-mb">
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="A-" class="radio-btn-size mb-0" id="a-">
+                            </div>
+                            <label for="a-" class="radio-text w-100">A-</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="A+" class="radio-btn-size mb-0" id="a+">
+                            </div>
+                            <label for="a+" class="radio-text w-100">A+</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="B-" class="radio-btn-size mb-0" id="b-">
+                            </div>
+                            <label for="b-" class="radio-text w-100">B-</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="B+" class="radio-btn-size mb-0" id="b+">
+                            </div>
+                            <label for="b+" class="radio-text w-100">B+</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="AB-" class="radio-btn-size mb-0" id="ab-">
+                            </div>
+                            <label for="ab-" class="radio-text w-100">AB-</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="AB+" class="radio-btn-size mb-0" id="ab+">
+                            </div>
+                            <label for="ab+" class="radio-text w-100">AB+</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="o-" class="radio-btn-size mb-0" id="o-">
+                            </div>
+                            <label for="o-" class="radio-text w-100">O-</label>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-3">
+                            <div>
+                                <input type="radio" name="radio" value="o+" class="radio-btn-size mb-0" id="o+">
+                            </div>
+                            <label for="o+" class="radio-text w-100">O+</label>
+                        </div>
+                    </div>
+                    <label for="team" class="mb-3">Disclaimer:</label><br>
+                    <p class="form-mb form-body-text">By participating in the Arjun Mile Relay, I acknowledge that running is a physically demanding activity that carries inherent risks. I agree to assume all risks associated with the event, including but not limited to falls, contact with other participants, weather conditions, and road conditions. The organizers, sponsors, and all parties involved in organizing the Arjun Mile Relay shall not be held responsible for any injury, illness, or other medical conditions that may arise during or after the event. I confirm that I am in good physical health and have received clearance from a medical professional to engage in this activity. By signing below, I agree to abide by the event rules and regulations and to follow all instructions from the event team.</p>
+                    <p class="form-mb form-body-text">I confirm that I am in good physical health and have received clearance from a medical professional to engage in this activity. By signing below, I agree to abide by the event rules and regulations and to follow all instructions from the event team.</p>
+
+                    <div class="d-flex form-mb align-items-start gap-3 justify-content-center">
+                        <input type="checkbox" class="radio-btn-size mb-0 p-2 w-auto" id="agree">
+                        <label for="agree" class="w-100">I Agree</a></label>
+                    </div>
+                    <div class="d-flex gap-4 flex-wrap justify-content-center justify-content-sm-start">
+                        <a href="registration.html" class="form-primary-btn primary-btn">Back</a>
+                        <a href="registration-step-3.html" class="primary-btn">Next</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/html/js/script.js"></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+
+</html>

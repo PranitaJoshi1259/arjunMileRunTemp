@@ -1,0 +1,602 @@
+@font-face { font-family: 'Adobe Calson Pro'; src: url('../assets/fonts/Adobe\ Caslon\ Pro\ Bold\ Italic.ttf') format('truetype'); font-weight: bold; font-style: italic;}
+
+:root {
+    --primary-color: #E9399C;
+    --secondary-color: #2393CD;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    max-width: 2560px;
+    margin: 0 auto;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+.title1 {
+    font-size: clamp(3.2rem, 0.629rem + 4.286vw, 6.8rem);
+    line-height: clamp(4.6rem, 1.457rem + 5.238vw, 9rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-light);
+}
+
+.title2 {
+    font-size: clamp(2.4rem, 0.686rem + 2.857vw, 4.8rem);
+    line-height: clamp(3rem, 0.857rem + 3.571vw, 6rem);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.title3 {
+    font-size: clamp(1.8rem, 1.086rem + 1.905vw, 2.8rem);
+    line-height: clamp(2rem, 0.857rem + 3.048vw, 3.6rem);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.description1 {
+    font-size: clamp(1.6rem, 0.886rem + 1.19vw, 2.6rem);
+    line-height: clamp(2.6rem, 1.171rem + 2.381vw, 4.6rem);
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.description2 {
+    font-size: clamp(1.6rem, 1.314rem + 0.476vw, 2rem);
+    line-height: clamp(2.4rem, 1.686rem + 1.19vw, 3.4rem);
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: justify;
+    color: var(--text-dark);
+}
+
+/* common-btn */
+    
+.primary-btn {
+    color: var(--text-light);
+    background: linear-gradient(90deg, #2393CD 0%, #FB3198 100%);
+    font-size: clamp(1.6rem, 1.029rem + 0.952vw, 2.4rem);
+    font-weight: 600;
+    padding: 15px 25px;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.primary-btn:hover {
+    color: var(--text-light);
+    background: linear-gradient(90deg, #29A1DE 0%, #FF3CA0 100%);
+    box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* navbar */
+.navbar-container {
+    padding: 15px 120px;
+}
+
+.navbar-nav li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.navbar-nav {
+    gap: 100px;
+}
+
+/* registration hero section */
+.registration-hero-banner {
+    background-image: url(/html/assets/images/registration-open-banner.webp);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    padding: 70px;
+    height: 80vh;
+    width: 100%;
+
+    h1{
+        font-size: clamp(4rem, -0.286rem + 7.143vw, 10rem);
+        line-height: clamp(6rem, 1rem + 8.333vw, 13rem);
+        font-weight: 800;
+        font-style: italic;
+    }
+}
+
+.registration-btn{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* hero-section */
+.hero-banner {
+    background-image: url(/html/assets/images/Hero\ section.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 190px 0;
+}
+
+.hero-banner-content {
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+.hero-banner-content span {
+    color: var(--primary-color);
+}
+
+.about-section{
+    background-image: url(/html/assets/images/power-tech-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* common-grid-structure */
+.inner-padding {
+    padding: 100px 20px;
+}
+
+.section-container-content {
+    gap: 30px;
+}
+
+.pad-end {
+    padding-right: 92px;
+}
+
+.pad-start {
+    padding-left: 92px;
+}
+
+.section-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 60px;
+    color: var(--text-dark);
+
+    img {
+        object-fit: contain;
+    }
+}
+
+.section-container-light span {
+    color: var(--secondary-color);
+    font-size: clamp(2rem, 1.714rem + 0.476vw, 2.4rem);
+    font-weight: 600;
+}
+
+.section-container-dark span {
+    color: var(--primary-color);
+    font-size: clamp(2rem, 1.714rem + 0.476vw, 2.4rem);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* event-schedule-section */
+.event-bg {
+    background-color: rgba(251, 49, 152, 0.05);
+    padding: 45px 0;
+}
+
+.event-timeline{
+    background-image: url(/html/assets/images/event-bg.webp);
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+
+.event-schedule-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.img-icon {
+    border-radius: 8px;
+}
+
+.event-schedule-section h5 {
+    font-weight: 700;
+}
+
+.event-schedule-section span {
+    font-size: clamp(1.4rem, 0.971rem + 1.143vw, 2rem);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* powertech-section */
+.powertech-section {
+    font-family: 'Adobe Calson Pro';
+}
+
+/* organization-section-carousel */
+.organization-section {
+    padding: 50px 160px;
+}
+
+.organization-section h4 {
+    font-size: clamp(2.2rem, 0.914rem + 2.143vw, 4rem);
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.organization-section h6 {
+    font-weight: 600;
+}
+
+/* team-building section */
+.teambuild-section {
+    background-image: url(/html/assets/images/team-build-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-btn {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+.team-btn:hover {
+    background-color: #FFECA8;
+    color: var(--text-dark);
+}
+
+/* faq */
+.faq-section {
+    max-width: 1030px;
+    padding-top: 50px;
+    text-transform: none;
+}
+
+.faq-item-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 23px;
+    text-transform: capitalize;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    color: var(--text-dark);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.faq-section .accordion-body {
+    color: #565656;
+}
+
+.faq-section .accordion-item {
+    border: none;
+    border-bottom: 2px solid #EAEAEA;
+}
+
+.faq-section ol li {
+    padding: 10px 0;
+}
+
+.faq-section .accordion-button::after {
+    background-image: url(/html/assets/icons/ic_round-plus.svg);
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-section .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed)::after {
+    background-image: url(/html/assets/icons/ic_round-cross.svg);
+}
+
+/* footer-section */
+.custom-footer{
+    max-width: 1400px;
+    padding: 60px 40px;
+    gap: 160px;
+}
+.footer-details{
+    gap: 40px;
+}
+.footer-social-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer-navigation-container{
+    max-width: 1620px;
+    padding: 60px;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+.footer-navigation a {
+    color: var(--text-dark);
+    font-size: 16px;
+}
+
+.registration-form{
+    width: 80%;
+    padding: 46px 60px;
+    border: 1px solid var(--text-dark);
+    border-radius: 20px;
+}
+
+.registration-form h6{
+    font-size: clamp(2.2rem, 0.914rem + 2.143vw, 4rem);
+    font-weight: 600;
+}
+
+.registration-form input{
+    width: 100%;
+    font-size: clamp(1.4rem, 1.114rem + 0.476vw, 1.8rem);
+    color: #858585; 
+    margin-bottom: 36px;
+    padding: 16px 20px;
+    border: none;
+    border-bottom: 1px solid #858585;
+}
+
+/* event timeline */
+.timeline-desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-light);
+    text-transform: capitalize;
+}
+
+/* desktop-timeline */
+.timeline-container {
+    max-width: 1600px;
+    padding: 0 40px;
+}
+
+.ps-timeline-sec .timeline-container ol.ps-timeline {
+    margin: 280px 0;
+    padding: 0;
+    border-top: 3px solid;
+    border-image: linear-gradient(90deg, #FFFFFF 0%, #D9C47A 10%, #2393CD 50%, #F1ABC9 90%, #FFFFFF 100%) 1;
+    list-style: none;
+}
+
+.ps-timeline-sec .timeline-container ol.ps-timeline li {
+    float: left;
+    width: 10%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.ps-timeline-sec .timeline-container ol.ps-timeline li span {
+    width: 25px;
+    height: 25px;
+    margin-left: -15px;
+    background-image: url(/html/assets/icons/event-ellipse.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+}
+
+.ps-timeline-sec .timeline-container ol.ps-timeline li .ps-top {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 70px;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.ps-timeline-sec .timeline-container ol.ps-timeline li .ps-bot {
+    position: absolute;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+/* responsive-timeline */
+.timeline {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.timeline:before {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    content: ' ';
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #D9C47A 10%, #2393CD 50%, #F1ABC9 90%, #FFFFFF 100%);
+    z-index: 0;
+}
+
+.circle-icon {
+    background-image: url(/html/assets/icons/event-ellipse.png);
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.timeline-width {
+    width: 200px;
+}
+
+/* media-query-starts */
+@media screen and (max-width: 1800px) {
+    .navbar-container {
+        padding: 15px 30px;
+    }
+    .navbar-nav {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .hero-banner {
+        padding: 60px;
+    }
+    .event-bg {
+        padding-inline: 60px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .inner-padding {
+        padding: 60px;
+    }
+    .section-container {
+        gap: 20px;
+    }
+    .organization-section, .custom-footer{
+        padding: 50px 90px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .pad-end {
+        padding-right: 20px;
+    }
+    .pad-start {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .brand-logo {
+        width: 180px;
+    }
+    .custom-footer{
+        gap: 80px;
+    }
+    .registration-form input {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .nav-res-padding{
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .description2, .description1 {
+        text-align: center;
+    }
+    .section-container {
+        gap: 40px;
+    }
+    .pad-end,
+    .pad-start {
+        padding: 0;
+    }
+    .faq-item-title {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 20px;
+    }
+    .custom-footer{
+        gap: 40px;
+    }
+    .registration-form {
+        padding: 30px;
+        width: 100%;
+    }
+    .footer-details {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .registration-hero-banner{
+        padding: 0;
+    }
+    .registration-hero-banner-background{
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .hero-banner {
+        padding: 0; 
+    }
+    .hero-banner-background{
+        background: rgba(0, 0, 0, 0.5);
+        padding: 30px 20px;
+    }
+    
+    .inner-padding {
+        padding: 60px 30px;
+    }
+    .event-bg {
+        padding-inline: 30px;
+    }
+    .organization-section{
+        padding: 30px;
+    }
+    .faq-section {
+        padding-top: 10px;
+    }
+    .custom-footer{
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .timeline:before {
+        left: 42px;
+    }
+    .timeline-width {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer-navigation {
+        align-items: center;
+    }
+    .inner-padding, .custom-footer {
+        padding: 60px 20px;
+    }
+    .registration-form input {
+        margin-bottom: 18px;
+        padding: 5px;
+    }
+    .hero-banner {
+        background-position-x: 65%;
+    }
+    .hero-banner-content {
+        position: relative;
+    }
+    .registration-hero-banner {
+        background-image: url(/html/assets/images/registration-open-banner.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,143 @@
+body{
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+.form-header{
+    padding: 20px 70px;
+}
+.registration-container{
+    padding: 20px;
+}
+.form-outer-border{
+    max-width: 720px;
+    margin: 0 auto;
+    border:  1px solid #BABABA;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 0px #0000001A;
+    background-color: var(--text-light);
+    overflow: hidden;
+}
+.form-container{
+    padding: 60px 80px;
+    
+}
+
+.form-container h1{
+    font-size: clamp(2rem, 1.143rem + 1.429vw, 3.2rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    padding-bottom: 40px;
+}
+.form-container label{
+    font-size: clamp(1.6rem, 1.457rem + 0.238vw, 1.8rem);
+    font-weight: 600;
+    color: #575757;
+}
+/* input-field */
+.form-container input{
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+    font-weight: 400;
+    color: #828282;
+    width: 100%;
+    margin-bottom: 36px;
+}
+.form-mb{
+    margin-bottom: 36px;
+}
+/* radio */
+.radio-btn-size{
+    width: 20px !important;
+    height: 20px !important;
+}
+.radio-text{
+    font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem) !important;
+    font-weight: 400 !important;
+    color: #828282 !important;
+    min-width: 84px;
+    padding-left: 10px;
+}
+/* checkbox */
+.form-body-text{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #626262;
+}
+/* form-btn */
+.primary-btn, .form-primary-btn{
+    font-size: 2rem;
+    width: 140px;
+    text-align: center;
+    display: block;
+}
+.form-primary-btn, .form-primary-btn:hover{
+    color: #6F6F6F;
+    background: #EDEDED;
+    display: block;
+}
+
+/* progress bar */
+.progress{
+    background-color: transparent;
+}
+.progress-bar{
+    background-image: linear-gradient(90deg, #2393CD 0%, #FB3198 100%);
+}
+
+.form-container input{
+    accent-color: #FB3198;
+}
+
+/* payment-tetx */
+.celebration-emoji{
+    font-size: clamp(4rem, 0.429rem + 5.952vw, 9rem);
+}
+.payement-text{
+    font-size: 1.8rem;
+    color: #575757;
+    font-weight: 600;
+}
+.message-description, .message-description a:hover{
+    font-weight: 600;
+    text-transform: none;
+    color: #3F3F3F;
+}
+.thankyou-title{
+    font-size: clamp(1.8rem, 1.371rem + 0.714vw, 2.4rem);
+    color: var(--text-dark);
+}
+.privacyPolicyContent ul li, .termsAndConditionsContent ul li {
+    list-style-type: none;
+}
+.termsAndConditionsTable th, td{
+    border: 1px solid #414141;
+    padding: 5px;
+}
+
+/* media-css */
+@media screen and (max-width: 768px){
+    .form-container input, .form-mb{
+        margin-bottom: 20px;
+    }
+    .form-container {
+        padding: 30px;
+    }
+    .primary-btn{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 425px){
+.radio-text{
+    min-width: 60px;
+}
+.form-header {
+    padding: 20px;
+}
+.primary-btn, .form-primary-btn{
+    width: 100% !important;
+    text-align: center;
+}
+}
